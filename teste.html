@@ -1,0 +1,42 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="direcionamento">
+        <a href="">Cadastro</a>
+        <a href="movimentacao.html">Movimentações</a>
+        <a href="estoque.html">Estoque</a>
+    </div>
+     <h2>Adicionar Novo Produto</h2>
+        <form action="adicionar_produto.php" method="POST">
+            <label for="nome">Nome do Produto:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+
+            <label for="quantidade">Quantidade:</label><br>
+            <input type="number" id="quantidade" name="quantidade" value="0" required><br><br>
+
+            
+            Usuário <br>
+             <select>
+                <option value="paulo">Paulo</option>
+                <option value="renan">Renan</option>
+                <option value="emanuel">Emanuel</option>
+                <option value="everton">Everton</option>
+                <option value="fabiano">Fabiano</option>
+             </select><br><br>
+             <button type="submit">Adicionar Produto</button></form><br>
+        </form>
+    
+</body>
+</html>
